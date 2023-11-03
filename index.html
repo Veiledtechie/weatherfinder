@@ -15,20 +15,32 @@
   <body>
     <div class="container">
       <header>
-        <form>
-          <input type="text" placeholder="Enter a city" required />
-          <input type="search" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <h1>Nigeria</h1>
-        <div>
-          <p>
-            Tuesday 11:14, scattered clouds <br />
-            Humidity:65%, Wind:5km/h
-          </p>
+        <div class="two-columns">
+          <div>
+            <h1 class="city">Nigeria</h1>
+
+            <p class="city-details">
+              Tuesday 11:14, scattered clouds <br />
+              Humidity:<strong>65%</strong>, Wind:<strong>5km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temperature-container">
+            <div class="weather-emoji">🌥</div>
+            <div class="weather-temperature">12</div>
+            <div class="weather-unit">ºC</div>
+          </div>
         </div>
-        <div>🌥12ºC</div>
       </main>
       <footer>
         This project was coded by
