@@ -17,6 +17,12 @@ function updateWeather(response) {
   let date = new Date(response.data.time * 1000);
 
   timeElement.innerHTML = formatDate(date);
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.innerHTML = `<img
+              src="${response.data.condition.icon_url}"
+              class="weather-emoji"
+            />`;
 }
 
 function formatDate(date) {
@@ -37,6 +43,7 @@ function formatDate(date) {
   }
   return `${day} ${hours}:${minutes}`;
 }
+
 function searchCity(city) {
   let apiKey = "tc6b22c02231b7009184f4b92obd4a5f";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
