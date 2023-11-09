@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
@@ -46,6 +52,22 @@
               12
             </div>
             <div class="weather-unit">ºC</div>
+          </div>
+        </div>
+
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thur</div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAADAwMDo6Ojl5eX7+/v09PSenp4vLy+ZmZk2NjbLy8tXV1ff39/v7+9wcHB5eXnV1dVmZmbNzc20tLQQEBB7e3tRUVGLi4s8PDyoqKgpKSnX19cjIyMJCQmSkpKDg4MYGBinp6dfX19JSUlsbGyxsbGcnJwXFxceHh7oU6ljAAAEqElEQVR4nO3ba3eiMBAG4AaJoMjFSxW1VavV1v//B5dMoLUS0JVQkp73+bJuDnpmSkwmCT49AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0gAdh1yG0iy8Z87oOolUOy3QdRKt2fz7DUZbgqOsgNHkJ+uVG7mcZbn8/mDasGFuXU3RFJ511EE4LPrNUJqXWqcjQ7SCcFiyVd8sTrYrea6NA5MKiq9Zx1nboJJ4W0LywuG6dLZM/cgszYthkq66jaNOL8ib+KWmW4U6+DE/J0l+v/eVkP1ZcGdo6vKavMc/+iQbP7NLuKp/+4esvYaX+jpVMLldQzsbuSfK0KSd4WbnxuWywNsNJkdI59vZ7b+4X/3+Xk0Z4vsrYNgMZ//L0NfX3ZwvZtqGeKl+/Bd2F2FAi4h86PxvHi++OSS9ii4sAUaWl5eY9JfbZl38Cp3yBRcL9i6qZqgEqB5yVxTewDi0U//ae1FS59rBEz+3d0fNomJ23H41ePNgu8/lumDq8/uKlfathd3dVv8yVo0zBse2bGMWK4mxSV4ytxa3+tfgaWynLT8YG1W/xbKpHeVF/Po+2TjANnMHh/LMAVaAZw5LpPsrHl8Xse/jvOyPZ6Peq3sbUFY+B+JpSWV/Xz2OZ+GvVrCfq0/KeqoneWdXdkGuLdcW8IZaGVhxiyEW8eq9ebptWbJGmlmQok6gaMaY16e8syZAGzep9UZrYn5UD6rH69pqEZrW45oJd5ZAptjSSbNRNFttTaG79JnYKN3VrBDnSqg4T85t/yCfOxMxnGKgTftReMqvoxvTWcbFXI/pySzE2Qzeg/hI6+H0vt4tC9plf7MexytqgQ5EYZ26t8rYi+vloMYrT2XcSkWg9Zi/4YDSkBN9aDfVBYquJ3doLfLksxd+9/EubXryVu2MvSYyswlcVo8hPP88tWCpqnJAKul8IsQl3lYpxcnnzwhG74uRLfKNXFn2v2LC4XTyHZ3YeTeJj/n3LbOm4wujTRe+75yW3r+678svHXW94cSvNnABJ7zLO/+xqzmfxRoOPwIMixuFhnqoOdevlOzoGL34dGeHr4NFe9kHvn2oNSqd8ehvc2A+tQyvjs76Q9OLyBjYbJaij1pez3aHg/KYnDnQTzVwxUZ3WfJuTFhxmPqU40RMaf2WGLvBdXbXI9q6KtgPexYqgERqR/38ubZ8ooocN5okv0Vv2SXsNH6TbnYXoHcQ+soGP0UT6hkCxp7/T8klajfV9e0R/N/CUm2ru2qPduy3MLL6n2u4hFwuwmvPTrri6Jgtjf3pBZbeWv7yjpfhrga+r2BLVX9XBYqfonEXD3jR10l3zz9GPBlMNE/XR1KJNHkI0fx6NxmTFWYYJqPRuenIbbQzeqKGFXcOpuk+bkUdNEWkXNN4KdKmnq0++jSB/P3B4OMCT3KszcpjJ5cfS3kM5OsOHdsp/WZ4ii0+h27ufG57mxZa+2QkWDwk9zjf4TCbnqH/sc6fUxGqtxDvfzkRpM7fl+XXuxMPb+VzxjzNb8iM8CgPnfkEYWdE9AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAy/wDT2igtD5yxlAAAAABJRU5ErkJggg=="
+                width="37"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">18°</span>
+                <span class="weather-forecast-temperature-min">12°</span>
+              </div>
+            </div>
           </div>
         </div>
       </main>
