@@ -56,6 +56,31 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+  days.forEach(function (days) {
+    forecastHtml =
+      forecastHtml +
+      `
+    <div class="weather-forecast-day">
+      
+        <div class="weather-forecast-date">${days}</div>
+        <div class="weather-forecast-icon">☁</div>
+        <div class="weather-forecast-temp">
+          <span class="weather-forecast-temp-max">
+            <strong>12°</strong>
+          <span>
+          <span class="weather-forecast-temp-min">10°</span>
+        </div>
+      
+    </div>
+  `;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
 let searchFormElement = document.querySelector("#search-form-js");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Ibadan");
+displayForecast();
