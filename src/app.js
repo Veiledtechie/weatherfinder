@@ -23,6 +23,7 @@ function updateWeather(response) {
               src="${response.data.condition.icon_url}"
               class="weather-emoji"
             />`;
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -56,7 +57,14 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
-function displayForecast() {
+
+function getForecast(city) {
+  let apiKey = "tc6b22c02231b7009184f4b92obd4a5f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
   let days = ["Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
@@ -83,4 +91,3 @@ function displayForecast() {
 let searchFormElement = document.querySelector("#search-form-js");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Ibadan");
-displayForecast();
