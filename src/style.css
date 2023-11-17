@@ -79,11 +79,19 @@ main {
   justify-content: space-evenly;
   text-align: center;
 }
-
+.weather-forecast-icon {
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
+}
 .footer {
   border-top: #cbf0f8;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
+}
+.weather-forecast-temp {
+  color: #1a73e8;
 }
